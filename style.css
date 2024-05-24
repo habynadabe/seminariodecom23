@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;  /* Ajuste para garantir que o background se ajuste ao tamanho da tela */
+    background-size: cover;
 }
 
 #form {
@@ -17,10 +17,10 @@ body {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    padding: 50px 20px;
+    padding-top: 850px;
     min-height: 100vh;
-    background-size: cover;  /* Certifique-se de que a imagem de fundo cubra toda a área */
-    background-position: center;  /* Centralize a imagem de fundo */
+    background-size: cover;
+    background-position: center;
 }
 
 form {
