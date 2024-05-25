@@ -8,14 +8,23 @@
 </head>
 <body>
     <div id="form">
+        <img src="./img/seminario.svg" alt="">
         <h1>Formulário de Inscrição</h1>
+        <h3>
+            1 - O valor da inscrição é de R$10,00 <br>
+            2 - Pagamento poderá ser feito via pix <br>
+            3 - Chave pix 08367421418, mercado pago <br>
+            4 - Enviar comprovante ao fim da inscrição.
+        </h3>
         <form action="https://api.sheetmonkey.io/form/7k1wWAYaoQPJs3RxuwUT8F" method="post">
-            <input type="text" placeholder="Nome" name="Name" required> <br>
-            <input type="email" placeholder="Email" name="Email" required> <br>
-            <input type="tel" placeholder="Telefone" name="Phone" required> <br>
+            <input type="text" placeholder="Nome Completo" name="Name" required> <br>
+            <input type="email" placeholder="email@email.com" name="Email" required> <br>
+            <input type="tel" placeholder="(84) 12345-6789" name="Phone" required maxlength="15" onkeyup="handlePhone(event)"> <br>
+            <input type="text" placeholder="Congregação/Setor" name="Congregação" required>
             <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
             <button type="submit">ENVIAR</button>
         </form>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
