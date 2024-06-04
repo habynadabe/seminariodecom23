@@ -4,27 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Seminario Decom 23</title>
 </head>
 <body>
+
+    <div id="head">
+        <img src="./img/Logo-Ad-Ponta-Negra.svg" alt="AdPontaNegra">
+        <div id="ident">
+            <h1>IEADERN - Conjunto Ponta Negra</h1>
+            <h2>Polo Setor 23</h2>
+            <p>Rua Praia de Jacumã, 9032, Ponta Negra, Natal/RN</p>    
+        </div>
+    </div>
+
+    <div id="inform">
+        <p id="text">
+            O DECOM 23 (Departamento de Comunicação), 
+            juntamente com o DEJAD 23 (Departamento de Jovens e Adolecentes), <br>
+            convida você à participar do 1º Seminário do DECOM 23, 
+            que será realizado no dia 20/07/2024 das 16:00hs às 21:00hs, <br>
+            na congregação Conjunto Ponta Negra Polo do Setor 23!
+        </p>
+    </div>
+
+    <div id="orient">
+        <h2>Formulário de Inscrição</h2>
+        <ol>
+            <li>Está aberto para toda a Igreja. Inscrições Limitadas!</li>
+            <li>O valor da inscrição é de R$10,00</li>
+            <li>Pagamento poderá ser feito via pix</li>
+            <li>Chave pix CPF 08367421418, mercado pago</li>
+            <li>Enviar comprovante ao fim da inscrição</li>
+        </ol>
+    </div>
+
     <div id="form">
-        <img src="./img/seminario.svg" alt="">
-        <h1>Formulário de Inscrição</h1>
-        <h3>
-            1 - O valor da inscrição é de R$10,00 <br>
-            2 - Pagamento poderá ser feito via pix <br>
-            3 - Chave pix 08367421418, mercado pago <br>
-            4 - Enviar comprovante ao fim da inscrição.
-        </h3>
-        <form action="https://api.sheetmonkey.io/form/7k1wWAYaoQPJs3RxuwUT8F" method="post">
-            <input type="text" placeholder="Nome Completo" name="Name" required> <br>
-            <input type="email" placeholder="email@email.com" name="Email" required> <br>
-            <input type="tel" placeholder="(84) 12345-6789" name="Phone" required maxlength="15" onkeyup="handlePhone(event)"> <br>
+        <form id="dados" action="https://api.sheetmonkey.io/form/7k1wWAYaoQPJs3RxuwUT8F" method="post">
+            <input type="text" placeholder="Nome Completo" name="Name" required>
+            <input type="email" placeholder="email@email.com" name="Email" required>
+            <input type="tel" placeholder="(84) 12345-6789" name="Phone" required maxlength="15" onkeyup="handlePhone(event)">
             <input type="text" placeholder="Congregação/Setor" name="Congregação" required>
             <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
             <button type="submit">ENVIAR</button>
         </form>
     </div>
+
     <script src="index.js"></script>
+
 </body>
 </html>
