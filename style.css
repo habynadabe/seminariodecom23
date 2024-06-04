@@ -120,7 +120,12 @@ button:hover {
 /* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {
+    
     #text {
         margin-right: 0;
+    }
+
+    #orient li {
+        margin-left: 3px;
     }
 }
